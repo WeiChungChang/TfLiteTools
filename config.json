@@ -1,0 +1,13 @@
+{
+    "--output_file"        : "./floatPnet.tflite", 
+    "--graph_def_file"     : null,
+    "--meta_file"          : "p2838/model.meta", 
+    "--meta_prefix"        : "p2838/model",
+    "--inference_type"     : "FLOAT",
+    "--input_arrays"       : "pnet/input",
+    "--output_arrays"      : "pnet/PReLU1/Add",
+    "--default_ranges_max" : 7,
+	"--default_ranges_min" : -8,
+    "--mean_values"        : 128,
+	"--std_dev_values"     : 127
+}
