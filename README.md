@@ -1,6 +1,6 @@
 # TfLiteTools
 TfLite tools.
-Purpose:
+
 
 # Test case #
 From Movidius MTCNN; links are listed below.
