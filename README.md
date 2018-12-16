@@ -2,6 +2,12 @@
 TfLite tools.
 Purpose:
 
+# Test case #
+From Movidius MTCNN; links are listed below.
+1. https://github.com/movidius/ncappzoo/tree/master/tensorflow/MTCNN
+2. https://github.com/ihere1/movidius-face
+
+
 # metaToTfLite.py # 
 metaToTfLite.py is used to tranfer .meta or .pb to tflite. Fill up the config file to suit your case.
 
