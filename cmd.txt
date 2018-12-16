@@ -1,0 +1,8 @@
+python3 runLiteModel.py --tflite pnetPReLU1Add.tflite  --out pnetPReLU1Add.csv --type 1
+python3 runLiteModel.py --tflite pnetPReLU1Relu.tflite  --out pnetPReLU1Relu.csv --type 1
+python3 runLiteModel.py --tflite pnetPReLU1Mul_1.tflite  --out pnetPReLU1Mul_1.csv --type 1
+python3 runLiteModel.py --tflite pnetPReLU1Mul_2.tflite  --out pnetPReLU1Mul_2.csv --type 1
+
+python3 mergeCsv.py pnetPReLU1Mul_1.csv pnetPReLU1Mul_2.csv index result.csv
+python3 mergeCsv.py result.csv pnetPReLU1Relu.csv index result.csv
+python3 mergeCsv.py result.csv pnetPReLU1Add.csv index result.csv
