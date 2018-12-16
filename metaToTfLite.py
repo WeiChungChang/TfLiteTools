@@ -86,13 +86,13 @@ def main(argv):
     mean_values        = makeOpt("--mean_values", config)
     std_dev_values     = makeOpt("--std_dev_values", config)
 
-    if meta_file != None:
+    if graph_def_file == None:
         pb_path = 'output.pb'
-        print(type(meta_file), ' ', type(meta_prefix))
         toPb(meta_file, meta_prefix, pb_path)
         fixPb(pb_path)
         graph_def_file = "--graph_def_file" + "=" + pb_path
 
+    print("graph_def_file = ", graph_def_file)
     call(["tflite_convert", 
           output_file,
           graph_def_file,
